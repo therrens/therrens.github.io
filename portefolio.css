@@ -1,0 +1,198 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif; /* Police moderne */
+  line-height: 1.6;
+  background-color: #e0f7fa; /* Couleur de fond bleu clair */
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #81d4fa, #03a9f4); /* Dégradé bleu */
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00; /* Couleur au survol */
+}
+
+#about {
+  background-color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #03a9f4; /* Nouvelle couleur bleu */
+}
+
+#about p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#portfolio {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#portfolio h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #03a9f4; /* Nouvelle couleur bleu */
+}
+
+.portfolio-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.5s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  color: #03a9f4; /* Nouvelle couleur bleu */
+  margin-bottom: 10px;
+}
+
+#contact {
+  background-color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #03a9f4; /* Nouvelle couleur bleu */
+}
+
+#contact a {
+  color: #03a9f4;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#contact a:hover {
+  color: #81d4fa; /* Couleur au survol */
+}
+
+footer {
+  background: linear-gradient(90deg, #81d4fa, #03a9f4); /* Dégradé bleu */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#about,
+#portfolio,
+#contact {
+  animation: fadeIn 1s ease-in-out;
+}
+
+#cv {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#cv h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #03a9f4; /* Nouvelle couleur bleu */
+}
+
+#cv p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #03a9f4; /* Nouvelle couleur bleu */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.cv {
+  border-radius: 15px;
+}
+
+.textes {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: medium;
+  color: #ffffff;
+}
